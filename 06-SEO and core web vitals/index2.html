@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: Page title -->
+    <title>Learn Web Development | HTML, CSS & JavaScript</title>
+
+    <!-- SEO: Meta description -->
+    <meta name="description"
+          content="Learn web development from scratch with HTML, CSS and JavaScript through practical examples and projects.">
+
+    <!-- SEO: Tell search engines to index this page -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Helps prevent duplicate URL issues -->
+    <link rel="canonical" href="https://example.com/web-development">
+
+    <!-- Preload an important hero image -->
+    <link rel="preload"
+          as="image"
+          href="hero.jpg"
+          fetchpriority="high">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/">WebDev Academy</a>
+
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#javascript">JavaScript</a>
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Main heading -->
+        <section>
+            <h1>Learn Web Development</h1>
+
+            <p>
+                Learn HTML, CSS and JavaScript from scratch
+                through practical examples and projects.
+            </p>
+
+            <!-- Hero image -->
+            <!-- width + height helps prevent CLS -->
+            <img
+                src="hero.jpg"
+                width="1200"
+                height="600"
+                alt="Developer learning web development on a laptop"
+                fetchpriority="high">
+        </section>
+
+
+        <!-- HTML section -->
+        <section id="html">
+
+            <h2>HTML</h2>
+
+            <p>
+                HTML provides the structure and meaning of a webpage.
+            </p>
+
+            <article>
+                <h3>What you will learn</h3>
+
+                <ul>
+                    <li>HTML elements</li>
+                    <li>Forms</li>
+                    <li>Semantic HTML</li>
+                    <li>SEO basics</li>
+                </ul>
+            </article>
+
+        </section>
+
+
+        <!-- CSS section -->
+        <section id="css">
+
+            <h2>CSS</h2>
+
+            <p>
+                CSS is used to style and design webpages.
+            </p>
+
+            <article>
+                <h3>What you will learn</h3>
+
+                <ul>
+                    <li>Colors and fonts</li>
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                    <li>Responsive design</li>
+                </ul>
+            </article>
+
+        </section>
+
+
+        <!-- JavaScript section -->
+        <section id="javascript">
+
+            <h2>JavaScript</h2>
+
+            <p>
+                JavaScript makes webpages interactive and dynamic.
+            </p>
+
+            <button id="learnButton">
+                Start Learning
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WebDev Academy</p>
+
+        <nav>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById("learnButton");
+
+        button.addEventListener("click", function () {
+            alert("Let's start learning!");
+        });
+    </script>
+
+</body>
+
+</html>

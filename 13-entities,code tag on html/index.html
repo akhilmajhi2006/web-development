@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage work properly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab -->
+    <title>HTML Entities and Code</title>
+</head>
+
+<body>
+
+    <!-- ==================== HTML ENTITIES ==================== -->
+
+    <h1>HTML Entities</h1>
+
+    <!-- &lt; displays < -->
+    <p>Less than: &lt;</p>
+
+    <!-- &gt; displays > -->
+    <p>Greater than: &gt;</p>
+
+    <!-- &amp; displays & -->
+    <p>Ampersand: &amp;</p>
+
+    <!-- &quot; displays " -->
+    <p>Double quote: &quot;</p>
+
+    <!-- &apos; displays ' -->
+    <p>Single quote: &apos;</p>
+
+    <!-- &copy; displays © -->
+    <p>Copyright: &copy; 2026</p>
+
+    <!-- &nbsp; creates a non-breaking space -->
+    <p>Hello&nbsp;&nbsp;&nbsp;World</p>
+
+
+    <!-- ==================== CODE TAG ==================== -->
+
+    <h1>Code Tag</h1>
+
+    <!-- <code> is used for a small piece of computer code -->
+    <p>
+        Use the <code>print()</code> function in Python.
+    </p>
+
+    <!--
+        If we want to DISPLAY HTML code,
+        we need HTML entities for < and >.
+    -->
+    <p>
+        HTML heading:
+        <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>
+    </p>
+
+
+    <!-- ==================== PRE TAG ==================== -->
+
+    <h1>Pre Tag</h1>
+
+    <!--
+        <pre> preserves spaces and line breaks.
+    -->
+    <pre>
+This text
+    keeps its
+        spaces and
+            line breaks.
+    </pre>
+
+
+    <!-- ==================== PRE + CODE ==================== -->
+
+    <h1>Code Block</h1>
+
+    <!--
+        <pre> preserves formatting.
+        <code> indicates that the content is computer code.
+    -->
+    <pre><code>
+function hello() {
+    console.log("Hello World!");
+}
+    </code></pre>
+
+
+    <!-- ==================== ENTITY + CODE ==================== -->
+
+    <h1>Displaying HTML Code</h1>
+
+    <!--
+        Entities prevent the browser from interpreting
+        the HTML as actual tags.
+    -->
+    <pre><code>
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;I am learning HTML.&lt;/p&gt;
+    </code></pre>
+
+</body>
+
+</html>
