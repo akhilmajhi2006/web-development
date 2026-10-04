@@ -1,0 +1,447 @@
+/* =========================================================
+   CSS BOX MODEL
+   Video #18
+   ========================================================= */
+
+
+/* =========================================================
+   BASIC PAGE STYLING
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   1. CONTENT
+   ========================================================= */
+
+/*
+   The content is the actual material inside the element.
+
+   Examples:
+   - text
+   - images
+   - other elements
+*/
+
+.content-box {
+    width: 300px;
+    height: 100px;
+
+    background-color: lightblue;
+}
+
+
+/* =========================================================
+   2. PADDING
+   ========================================================= */
+
+/*
+   Padding is the space between the content
+   and the border.
+
+   Syntax:
+
+   padding: value;
+*/
+
+.padding-box {
+    width: 300px;
+
+    padding: 30px;
+
+    background-color: lightgreen;
+}
+
+
+/* =========================================================
+   3. PADDING ON INDIVIDUAL SIDES
+   ========================================================= */
+
+/*
+   Individual padding properties:
+
+   padding-top
+   padding-right
+   padding-bottom
+   padding-left
+*/
+
+.individual-padding {
+    width: 300px;
+
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+    background-color: lightyellow;
+}
+
+
+/*
+   Shorthand with four values:
+
+   padding: top right bottom left;
+*/
+
+.individual-padding {
+    padding: 30px 50px 20px 10px;
+}
+
+
+/*
+   Three-value shorthand:
+
+   padding: top left/right bottom;
+*/
+
+/*
+.example {
+    padding: 10px 20px 30px;
+}
+*/
+
+
+/*
+   Two-value shorthand:
+
+   padding: top/bottom left/right;
+*/
+
+/*
+.example {
+    padding: 10px 20px;
+}
+*/
+
+
+/* =========================================================
+   4. BORDER
+   ========================================================= */
+
+/*
+   A border surrounds the padding and content.
+
+   Basic syntax:
+
+   border: width style color;
+*/
+
+.border-box {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 5px solid black;
+
+    background-color: lightblue;
+}
+
+
+/*
+   Common border styles include:
+
+   solid
+   dashed
+   dotted
+   double
+*/
+
+.individual-border {
+    width: 300px;
+
+    padding: 20px;
+
+    border-top: 5px solid red;
+    border-right: 5px dashed blue;
+    border-bottom: 5px dotted green;
+    border-left: 5px double purple;
+}
+
+
+/* =========================================================
+   6. BORDER RADIUS
+   ========================================================= */
+
+/*
+   border-radius rounds the corners of an element.
+*/
+
+.rounded-box {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 4px solid black;
+
+    border-radius: 15px;
+
+    background-color: lightcoral;
+}
+
+
+/*
+   A large border-radius can make a box circular
+   if its width and height are equal.
+*/
+
+.rounded-box:hover {
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   7. MARGIN
+   ========================================================= */
+
+/*
+   Margin is the space OUTSIDE the border.
+
+   Padding = inside
+
+   Margin = outside
+*/
+
+.margin-box {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 3px solid black;
+
+    margin: 30px;
+
+    background-color: lightblue;
+}
+
+.second-margin-box {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 3px solid black;
+
+    margin: 30px;
+
+    background-color: lightgreen;
+}
+
+
+/* =========================================================
+   8. MARGIN ON INDIVIDUAL SIDES
+   ========================================================= */
+
+.individual-margin {
+    width: 300px;
+
+    padding: 20px;
+
+    border: 3px solid black;
+
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+    background-color: lightyellow;
+}
+
+
+/*
+   Margin shorthand:
+
+   margin: top right bottom left;
+*/
+
+/*
+.example {
+    margin: 10px 20px 30px 40px;
+}
+*/
+
+
+/*
+   Three-value shorthand:
+
+   margin: top left/right bottom;
+*/
+
+/*
+.example {
+    margin: 10px 20px 30px;
+}
+*/
+
+
+/*
+   Two-value shorthand:
+
+   margin: top/bottom left/right;
+*/
+
+/*
+.example {
+    margin: 10px 20px;
+}
+*/
+
+
+/* =========================================================
+   9. WIDTH AND HEIGHT
+   ========================================================= */
+
+.size-box {
+    width: 300px;
+    height: 150px;
+
+    padding: 20px;
+
+    border: 5px solid black;
+
+    background-color: lightpink;
+}
+
+
+/* =========================================================
+   10. COMPLETE BOX MODEL
+   ========================================================= */
+
+/*
+   The complete box can be thought of as:
+
+   ┌───────────────────────────────┐
+   │            MARGIN             │
+   │   ┌───────────────────────┐   │
+   │   │        BORDER         │   │
+   │   │  ┌─────────────────┐  │   │
+   │   │  │     PADDING     │  │   │
+   │   │  │  ┌───────────┐  │  │   │
+   │   │  │  │  CONTENT  │  │  │   │
+   │   │  │  └───────────┘  │  │   │
+   │   │  └─────────────────┘  │   │
+   │   └───────────────────────┘   │
+   └───────────────────────────────┘
+*/
+
+.complete-box {
+    width: 300px;
+    height: 100px;
+
+    padding: 20px;
+
+    border: 5px solid black;
+
+    margin: 40px;
+
+    background-color: lightblue;
+}
+
+
+/* =========================================================
+   11. BOX-SIZING
+   ========================================================= */
+
+/*
+   By default:
+
+   box-sizing: content-box;
+
+   Width and height apply to the CONTENT area.
+*/
+
+.content-box-sizing {
+    box-sizing: content-box;
+
+    width: 300px;
+    height: 100px;
+
+    padding: 30px;
+
+    border: 5px solid black;
+
+    background-color: lightcoral;
+
+    margin-bottom: 20px;
+}
+
+
+/*
+   With border-box:
+
+   width and height include:
+
+   content + padding + border
+*/
+
+.border-box-sizing {
+    box-sizing: border-box;
+
+    width: 300px;
+    height: 100px;
+
+    padding: 30px;
+
+    border: 5px solid black;
+
+    background-color: lightgreen;
+}
+
+
+/* =========================================================
+   12. VISUAL BOX MODEL
+   ========================================================= */
+
+.outer-box {
+    /*
+       This represents the outer spacing / margin area.
+    */
+
+    background-color: lightyellow;
+
+    padding: 40px;
+}
+
+.middle-box {
+    /*
+       This represents the border area.
+    */
+
+    border: 10px solid red;
+
+    padding: 30px;
+
+    background-color: lightblue;
+}
+
+.inner-box {
+    /*
+       This is the actual content area.
+    */
+
+    padding: 30px;
+
+    background-color: white;
+
+    text-align: center;
+}

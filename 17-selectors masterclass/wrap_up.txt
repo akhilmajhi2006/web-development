@@ -1,11 +1,3 @@
-CSS SELECTORS — VIDEO #17
-==========================
-
-Topic:
-CSS Selectors MasterClass
-
-Course:
-CodeWithHarry — Sigma Web Development Course
 
 --------------------------------------------------
 1. WHAT IS A CSS SELECTOR?
@@ -727,23 +719,3 @@ p:first-child
 
 
 --------------------------------------------------
-VIDEO #17 COMPLETE
---------------------------------------------------
-
-You have covered the selector concepts introduced in
-this video:
-
-✓ Element selector
-✓ Class selector
-✓ ID selector
-✓ Child selector
-✓ Descendant selector
-✓ Universal selector
-✓ Pseudo selectors / pseudo-classes
-✓ Link states
-✓ :first-child
-✓ Child (>) vs descendant (space)
-
-NEXT COURSE VIDEO:
-
-#18 — CSS Box Model - Margin, Padding & Borders

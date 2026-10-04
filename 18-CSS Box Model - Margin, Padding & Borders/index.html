@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box Model Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <p class="intro">
+        This page demonstrates content, padding, border, margin,
+        width, height, and box sizing.
+    </p>
+
+
+    <!-- =====================================================
+         1. CONTENT
+         ===================================================== -->
+
+    <section>
+        <h2>1. Content</h2>
+
+        <div class="content-box">
+            This text is the content of the box.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         2. PADDING
+         ===================================================== -->
+
+    <section>
+        <h2>2. Padding</h2>
+
+        <div class="padding-box">
+            This box has padding.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         3. PADDING ON INDIVIDUAL SIDES
+         ===================================================== -->
+
+    <section>
+        <h2>3. Padding on Individual Sides</h2>
+
+        <div class="individual-padding">
+            Padding can be different on each side.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         4. BORDER
+         ===================================================== -->
+
+    <section>
+        <h2>4. Border</h2>
+
+        <div class="border-box">
+            This box has a border.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         5. DIFFERENT BORDER SIDES
+         ===================================================== -->
+
+    <section>
+        <h2>5. Border on Individual Sides</h2>
+
+        <div class="individual-border">
+            Different borders can be applied to different sides.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         6. BORDER RADIUS
+         ===================================================== -->
+
+    <section>
+        <h2>6. Border Radius</h2>
+
+        <div class="rounded-box">
+            This box has rounded corners.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         7. MARGIN
+         ===================================================== -->
+
+    <section>
+        <h2>7. Margin</h2>
+
+        <div class="margin-box">
+            This box has margin around it.
+        </div>
+
+        <div class="second-margin-box">
+            This is another box.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         8. MARGIN ON INDIVIDUAL SIDES
+         ===================================================== -->
+
+    <section>
+        <h2>8. Margin on Individual Sides</h2>
+
+        <div class="individual-margin">
+            This box has different margins on different sides.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         9. WIDTH AND HEIGHT
+         ===================================================== -->
+
+    <section>
+        <h2>9. Width and Height</h2>
+
+        <div class="size-box">
+            This box has a fixed width and height.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         10. COMPLETE BOX MODEL
+         ===================================================== -->
+
+    <section>
+        <h2>10. Complete Box Model</h2>
+
+        <div class="complete-box">
+            This box has content, padding, border and margin.
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         11. BOX-SIZING
+         ===================================================== -->
+
+    <section>
+        <h2>11. Box Sizing</h2>
+
+        <div class="content-box-sizing">
+            content-box
+        </div>
+
+        <div class="border-box-sizing">
+            border-box
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         12. BOX MODEL VISUALIZATION
+         ===================================================== -->
+
+    <section>
+        <h2>12. Box Model Visualization</h2>
+
+        <div class="outer-box">
+
+            <div class="middle-box">
+
+                <div class="inner-box">
+                    Content
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+            <!-- MARGIN
+    ┌─────────────────────┐
+    │       BORDER        │
+    │  ┌───────────────┐  │
+    │  │    PADDING    │  │
+    │  │  ┌─────────┐  │  │
+    │  │  │ CONTENT │  │  │
+    │  │  └─────────┘  │  │
+    │  └───────────────┘  │
+    └─────────────────────┘ -->
