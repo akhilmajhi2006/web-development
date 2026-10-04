@@ -1,0 +1,21 @@
+/* style.css */
+
+/* Selects elements with class="box" */
+.box {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(128, 0, 0);
+    color: blue;
+}
+
+/* Selects elements with class="card" */
+.card {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid blue;
+}
+.box h1{
+    color: yellow;
+}

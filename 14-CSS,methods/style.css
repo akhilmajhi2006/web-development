@@ -1,0 +1,7 @@
+.box {
+    /* Change the background color */
+    background-color: lightgreen;
+
+    /* Add space inside the box */
+    padding: 20px;
+}

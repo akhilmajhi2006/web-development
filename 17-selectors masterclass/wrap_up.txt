@@ -1,0 +1,749 @@
+CSS SELECTORS — VIDEO #17
+==========================
+
+Topic:
+CSS Selectors MasterClass
+
+Course:
+CodeWithHarry — Sigma Web Development Course
+
+--------------------------------------------------
+1. WHAT IS A CSS SELECTOR?
+--------------------------------------------------
+
+A CSS selector is used to select HTML elements that
+we want to style.
+
+Basic CSS structure:
+
+selector {
+    property: value;
+}
+
+Example:
+
+p {
+    color: red;
+}
+
+This selects all <p> elements and makes their text red.
+
+
+--------------------------------------------------
+2. ELEMENT SELECTOR
+--------------------------------------------------
+
+An element selector selects elements using their
+HTML tag name.
+
+Syntax:
+
+element {
+    property: value;
+}
+
+Example:
+
+div {
+    background-color: red;
+}
+
+This selects every <div> on the page.
+
+Another example:
+
+p {
+    color: blue;
+}
+
+This selects every <p> element.
+
+IMPORTANT:
+
+If there are many elements of the same type, an
+element selector affects all of them.
+
+For example:
+
+div {
+    background-color: red;
+}
+
+Every div will get the red background.
+
+
+--------------------------------------------------
+3. CLASS SELECTOR
+--------------------------------------------------
+
+A class selector selects elements having a particular
+class.
+
+In HTML:
+
+<p class="red">Hello</p>
+
+In CSS:
+
+.red {
+    color: red;
+}
+
+The dot (.) is used before the class name.
+
+Syntax:
+
+.class-name {
+    property: value;
+}
+
+Example:
+
+.red {
+    color: red;
+}
+
+The same class can be applied to multiple elements.
+
+Example:
+
+<p class="red">One</p>
+<p class="red">Two</p>
+<div class="red">Three</div>
+
+All three can be styled using:
+
+.red {
+    color: red;
+}
+
+IMPORTANT:
+
+Classes are useful when we want to apply the same
+style to multiple elements.
+
+
+--------------------------------------------------
+4. ID SELECTOR
+--------------------------------------------------
+
+An ID selector selects an element using its id.
+
+HTML:
+
+<div id="special">
+    Hello
+</div>
+
+CSS:
+
+#special {
+    color: red;
+}
+
+The hash (#) is used before the ID name.
+
+Syntax:
+
+#id-name {
+    property: value;
+}
+
+Example:
+
+#special {
+    background-color: antiquewhite;
+}
+
+The selector targets the element whose id is
+"special".
+
+IMPORTANT:
+
+An ID is intended to identify a particular element,
+whereas a class is commonly used to group elements
+for styling.
+
+
+--------------------------------------------------
+5. CHILD SELECTOR
+--------------------------------------------------
+
+The child selector is written using:
+
+>
+
+It selects only DIRECT children.
+
+Syntax:
+
+parent > child {
+    property: value;
+}
+
+Example:
+
+div > p {
+    color: red;
+}
+
+This means:
+
+Select <p> elements that are DIRECT children of <div>.
+
+Example:
+
+<div>
+    <p>Hello</p>
+</div>
+
+Here the p is a direct child of div, so it is selected.
+
+
+But:
+
+<div>
+    <section>
+        <p>Hello</p>
+    </section>
+</div>
+
+Here p is NOT a direct child of div.
+
+It is a descendant of div.
+
+Therefore:
+
+div > p
+
+will NOT select this p.
+
+
+--------------------------------------------------
+6. DESCENDANT SELECTOR
+--------------------------------------------------
+
+A descendant selector uses a SPACE between selectors.
+
+Syntax:
+
+ancestor descendant {
+    property: value;
+}
+
+Example:
+
+div p {
+    color: red;
+}
+
+This selects p elements anywhere inside div.
+
+It does not matter whether p is:
+
+- a direct child
+- a grandchild
+- a great-grandchild
+- etc.
+
+Example:
+
+<div>
+    <section>
+        <p>Hello</p>
+    </section>
+</div>
+
+The p is a descendant of div.
+
+Therefore:
+
+div p {
+    color: red;
+}
+
+will select it.
+
+
+--------------------------------------------------
+7. CHILD vs DESCENDANT
+--------------------------------------------------
+
+This is VERY IMPORTANT.
+
+CHILD:
+
+div > p
+
+Means:
+
+p must be a DIRECT child of div.
+
+
+DESCENDANT:
+
+div p
+
+Means:
+
+p can be anywhere inside div.
+
+
+Example:
+
+<div>
+    <p>Direct child</p>
+
+    <section>
+        <p>Grandchild</p>
+    </section>
+</div>
+
+For:
+
+div > p
+
+Only:
+
+Direct child
+
+is selected.
+
+For:
+
+div p
+
+Both paragraphs are selected.
+
+
+Easy way to remember:
+
+> = direct child only
+
+(space) = any descendant
+
+
+--------------------------------------------------
+8. UNIVERSAL SELECTOR
+--------------------------------------------------
+
+The universal selector is:
+
+*
+
+It selects all elements.
+
+Example:
+
+* {
+    margin: 5px;
+}
+
+This applies the rule to all elements.
+
+Syntax:
+
+* {
+    property: value;
+}
+
+Example:
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+This is commonly useful when applying a general style
+to all elements.
+
+
+--------------------------------------------------
+9. PSEUDO SELECTORS / PSEUDO-CLASSES
+--------------------------------------------------
+
+Pseudo selectors allow us to style elements based on
+their state or position.
+
+They use a colon (:).
+
+One important example from this video is styling links
+according to their state.
+
+Example:
+
+a:hover {
+    color: red;
+}
+
+This changes the link when the mouse is placed over it.
+
+
+--------------------------------------------------
+10. LINK PSEUDO-CLASSES
+--------------------------------------------------
+
+Common link states demonstrated with pseudo selectors:
+
+a:link
+
+a:visited
+
+a:hover
+
+a:active
+
+
+a:link
+-------
+
+Selects an unvisited link.
+
+Example:
+
+a:link {
+    color: blue;
+}
+
+
+a:visited
+---------
+
+Selects a link that the user has already visited.
+
+Example:
+
+a:visited {
+    color: purple;
+}
+
+
+a:hover
+-------
+
+Selects the link while the mouse is over it.
+
+Example:
+
+a:hover {
+    color: red;
+}
+
+
+a:active
+--------
+
+Selects the link while it is being activated/clicked.
+
+Example:
+
+a:active {
+    color: green;
+}
+
+
+--------------------------------------------------
+11. :first-child
+--------------------------------------------------
+
+Another pseudo-class covered in the video is:
+
+:first-child
+
+It can select an element based on its position
+inside its parent.
+
+Example:
+
+div p:first-child {
+    color: red;
+}
+
+This selects a p element if it is the first child
+of its parent.
+
+
+Example:
+
+<div>
+    <p>First</p>
+    <p>Second</p>
+    <p>Third</p>
+</div>
+
+With:
+
+div p:first-child {
+    color: red;
+}
+
+Only:
+
+First
+
+is selected.
+
+
+--------------------------------------------------
+12. SELECTOR SYMBOL CHEAT SHEET
+--------------------------------------------------
+
+Element selector:
+
+p
+
+Meaning:
+
+Select all p elements.
+
+
+Class selector:
+
+.red
+
+Meaning:
+
+Select elements having class="red".
+
+
+ID selector:
+
+#special
+
+Meaning:
+
+Select the element having id="special".
+
+
+Child selector:
+
+div > p
+
+Meaning:
+
+Select p elements that are direct children of div.
+
+
+Descendant selector:
+
+div p
+
+Meaning:
+
+Select p elements anywhere inside div.
+
+
+Universal selector:
+
+*
+
+Meaning:
+
+Select all elements.
+
+
+Pseudo-class:
+
+a:hover
+
+Meaning:
+
+Select an element when the specified state occurs.
+
+
+First-child pseudo-class:
+
+p:first-child
+
+Meaning:
+
+Select p when it is the first child of its parent.
+
+
+--------------------------------------------------
+13. QUICK COMPARISON
+--------------------------------------------------
+
+SELECTOR              SYMBOL       PURPOSE
+
+Element               p            Selects all p elements
+
+Class                 .class       Selects elements
+                                   with that class
+
+ID                    #id          Selects element
+                                   with that ID
+
+Universal             *            Selects all elements
+
+Child                 >            Selects direct children
+
+Descendant            space        Selects descendants
+
+Pseudo-class          :            Selects based on
+                                   state/position
+
+
+--------------------------------------------------
+14. PRACTICE EXAMPLES
+--------------------------------------------------
+
+Example 1 — Element:
+
+h1 {
+    color: blue;
+}
+
+
+Example 2 — Class:
+
+.highlight {
+    background-color: yellow;
+}
+
+
+Example 3 — ID:
+
+#title {
+    color: red;
+}
+
+
+Example 4 — Child:
+
+div > p {
+    color: green;
+}
+
+
+Example 5 — Descendant:
+
+div p {
+    color: purple;
+}
+
+
+Example 6 — Universal:
+
+* {
+    margin: 5px;
+}
+
+
+Example 7 — Hover:
+
+a:hover {
+    color: red;
+}
+
+
+Example 8 — First child:
+
+div p:first-child {
+    font-weight: bold;
+}
+
+
+--------------------------------------------------
+15. MOST IMPORTANT THINGS TO REMEMBER
+--------------------------------------------------
+
+1. A selector determines which HTML elements CSS
+   will style.
+
+2. Element selector uses the tag name.
+
+3. Class selector uses a dot:
+   .class
+
+4. ID selector uses a hash:
+   #id
+
+5. Classes can be used for multiple elements.
+
+6. The child selector uses:
+   >
+
+7. > means DIRECT CHILD.
+
+8. A space creates a descendant selector.
+
+9. A descendant can be a child, grandchild,
+   great-grandchild, etc.
+
+10. The universal selector is:
+    *
+
+11. Pseudo-classes use:
+    :
+
+12. :hover is useful for styling an element when
+    the mouse is over it.
+
+13. :link, :visited, :hover and :active can be
+    used to style different link states.
+
+14. :first-child can select an element based on
+    its position among its siblings.
+
+
+--------------------------------------------------
+16. FINAL MEMORY TRICK
+--------------------------------------------------
+
+Think of CSS selectors like this:
+
+p
+↓
+"Give me every p"
+
+.red
+↓
+"Give me everything with class red"
+
+#box
+↓
+"Give me the element with id box"
+
+*
+↓
+"Give me EVERYTHING"
+
+div > p
+↓
+"Give me p directly inside div"
+
+div p
+↓
+"Give me p anywhere inside div"
+
+a:hover
+↓
+"Give me the link while I'm hovering over it"
+
+p:first-child
+↓
+"Give me p if it is the first child"
+
+
+--------------------------------------------------
+VIDEO #17 COMPLETE
+--------------------------------------------------
+
+You have covered the selector concepts introduced in
+this video:
+
+✓ Element selector
+✓ Class selector
+✓ ID selector
+✓ Child selector
+✓ Descendant selector
+✓ Universal selector
+✓ Pseudo selectors / pseudo-classes
+✓ Link states
+✓ :first-child
+✓ Child (>) vs descendant (space)
+
+NEXT COURSE VIDEO:
+
+#18 — CSS Box Model - Margin, Padding & Borders

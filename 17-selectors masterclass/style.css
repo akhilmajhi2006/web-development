@@ -1,0 +1,117 @@
+/* ================================
+   ELEMENT SELECTOR
+   ================================ */
+
+/* Selects every div element */
+div {
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* ================================
+   CLASS SELECTOR
+   ================================ */
+
+/* Selects every element having class="red" */
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* ================================
+   ID SELECTOR
+   ================================ */
+
+/* Selects the element having id="special" */
+#special {
+    background-color: antiquewhite;
+    color: black;
+    padding: 15px;
+}
+
+
+/* ================================
+   CHILD SELECTOR
+   ================================ */
+
+/*
+   > means DIRECT CHILD
+
+   This selects only p elements
+   that are directly inside .parent
+*/
+.parent > p {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+
+/* ================================
+   DESCENDANT SELECTOR
+   ================================ */
+
+/*
+   A space means DESCENDANT.
+
+   This selects every p inside
+   .descendant, whether it is a
+   direct child, grandchild, etc.
+*/
+.descendant p {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+/* ================================
+   UNIVERSAL SELECTOR
+   ================================ */
+
+/*
+   * selects all elements.
+*/
+* {
+    margin: 5px;
+}
+
+
+/* ================================
+   PSEUDO SELECTORS
+   ================================ */
+
+/* Unvisited link */
+a:link {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* When mouse is placed over the link */
+a:hover {
+    color: red;
+}
+
+/* While the link is being clicked */
+a:active {
+    color: green;
+}
+
+
+/* ================================
+   :first-child PSEUDO-CLASS
+   ================================ */
+
+/*
+   Selects an element if it is
+   the first child of its parent.
+*/
+.first-child-example p:first-child {
+    background-color: yellow;
+    font-weight: bold;
+}

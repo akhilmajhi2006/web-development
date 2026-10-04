@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors - Video 17</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS Selectors MasterClass</h1>
+
+    <!-- Element Selector -->
+    <div>
+        This div is selected using an element selector.
+    </div>
+
+    <div>
+        This is another div.
+    </div>
+
+
+    <!-- Class Selector -->
+    <p class="red">
+        This paragraph uses a class selector.
+    </p>
+
+    <p class="red">
+        Multiple elements can use the same class.
+    </p>
+
+    <p>
+        This paragraph does not have the red class.
+    </p>
+
+
+    <!-- ID Selector -->
+    <div id="special">
+        This div is selected using an ID selector.
+    </div>
+
+
+    <!-- Child Selector -->
+    <section class="parent">
+        <p>
+            I am a direct child of section.
+        </p>
+
+        <div>
+            <p>
+                I am NOT a direct child of section.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Descendant Selector -->
+    <section class="descendant">
+        <div>
+            <p>
+                I am a descendant of section.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Universal Selector -->
+    <article>
+        <h2>Universal Selector Example</h2>
+        <p>Universal selector can target all elements.</p>
+    </article>
+
+
+    <!-- Pseudo Selectors -->
+    <h2>Pseudo Selector Examples</h2>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+
+    <br><br>
+
+    <a href="https://www.facebook.com" target="_blank">
+        Visit Facebook
+    </a>
+
+
+    <!-- First Child -->
+    <div class="first-child-example">
+        <p>I am the first child.</p>
+        <p>I am the second child.</p>
+        <p>I am the third child.</p>
+    </div>
+
+</body>
+</html>

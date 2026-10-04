@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+        INTERNAL CSS:
+        CSS is written inside the <style> tag.
+        This CSS applies to elements in this HTML file.
+    -->
+    <style>
+        /* Internal CSS */
+        h1 {
+            color: blue;
+        }
+    </style>
+
+    <!--
+        EXTERNAL CSS:
+        The CSS is written in a separate file called style.css.
+        The <link> tag connects that CSS file to this HTML file.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        INLINE CSS:
+        CSS is written directly inside the HTML element
+        using the "style" attribute.
+    -->
+    <p style="color: red;">
+        This paragraph uses Inline CSS.
+    </p>
+
+    <!--
+        This <h1> uses Internal CSS.
+        The color is defined inside the <style> tag above.
+    -->
+    <h1>
+        This heading uses Internal CSS.
+    </h1>
+
+    <!--
+        This <div> uses External CSS.
+        Its styling is defined inside the separate style.css file.
+    -->
+    <div class="box">
+        This div uses External CSS.
+    </div>
+
+</body>
+
+</html>
